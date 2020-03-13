@@ -1,0 +1,13 @@
+<div class="po-wrapper">
+  <po-toolbar
+    p-title="Central de Erros"
+    [p-profile]="profile"
+    [p-notification-actions]="notificationActions"
+    [p-notification-number]="getNotificationNumber()"
+    [p-profile-actions]="profileActions">
+  </po-toolbar>
+  <po-menu [p-menus]="menus" p-collapsed>
+  </po-menu>
+
+  <router-outlet></router-outlet>
+</div>
